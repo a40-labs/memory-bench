@@ -1,4 +1,4 @@
-# memory
+# memory-bench
 
 Per-question results and verification scripts for a controlled comparison of agent-memory
 architectures: **files the model curates**, an **auto-mined structured store**, and a **trained
@@ -368,8 +368,8 @@ where the actor had headroom**; two actor tiers on two tasks, so a pattern, not 
 ## How to reproduce
 
 ```bash
-git clone https://github.com/a40-labs/memory
-cd memory
+git clone https://github.com/a40-labs/memory-bench
+cd memory-bench
 python3 scripts/verify_all.py          # every row-backed figure above, rebuilt and checked
 python3 scripts/longmemeval_s.py       # or run one benchmark at a time
 python3 systems/file-based/test_ccmem.py   # the file-based mechanism against its survey
